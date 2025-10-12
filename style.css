@@ -213,7 +213,7 @@ p {
   font-weight: 400;
   height: 136px;
   width: 485px;
-  margin-top: 38px;
+  margin-top: 3px;
   margin-left: 100px;
 }
 h1 .highlight {
@@ -221,24 +221,19 @@ h1 .highlight {
   position: relative;
   display: inline-block;
 }
-
-h1 .highlight::after {
-  content: "";
-  position: absolute;
-  left: 32%;
-
-  bottom: -6px;
-  transform: translateX(-50%);
-  width: 100%;
+.Text-Image {
+  width: 381px;
   height: 17px;
-  background: url("./public/underline.png") no-repeat center;
-  background-size: contain;
-  opacity: 100%;
-  -webkit-text-stroke: 3px #fa1239;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 365.25px;
+  margin-left: 100px;
+  margin-bottom: 50px;
 }
+
 @media (max-width: 786px) {
-  h1 .highlight::after {
+  .Text-Image {
     display: none;
   }
 }

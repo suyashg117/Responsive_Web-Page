@@ -221,19 +221,20 @@ h1 .highlight {
   position: relative;
   display: inline-block;
 }
-.Text-Image {
-  width: 381px;
-  height: 17px;
+
+h1 .highlight::after {
+  content: "";
   position: absolute;
+  bottom: -7px;
   left: 0;
-  top: 0;
-  margin-top: 365.25px;
-  margin-left: 100px;
-  margin-bottom: 50px;
+  width: 381px; /* ab span ke width ke barabar */
+  height: 17px;
+  background: url("./public/Underline.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 @media (max-width: 786px) {
-  .Text-Image {
+  h1 .highlight::after {
     display: none;
   }
 }

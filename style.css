@@ -229,7 +229,7 @@ h1 .highlight::after {
   left: 0;
   width: 381px; /* ab span ke width ke barabar */
   height: 17px;
-  background: url("/public/Underline.png");
+  background: url("./public/underline.png");
   background-size: 100% 100%;
 }
 
